@@ -3,12 +3,21 @@
   "version": "0.0.1",
   "description": "Website for Crossroads Church xrds.org.uk",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "auto-changelog": "^0.3.1",
+    "jade": "^1.11.0",
+    "marked": "^0.3.6",
+    "node-sass": "^4.5.3",
+    "npm-ls-scripts": "^0.1.2",
     "nvm": "^0.0.4"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "npm test"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "auto-changelog --package; git add CHANGELOG.md",
+    "compile": "roots compile ",
+    "start": "echo run npm start from crossroads directory",
+    "gitgraph": "git log --graph --decorate --pretty=oneline --abbrev-commit"
   },
   "repository": {
     "type": "git",

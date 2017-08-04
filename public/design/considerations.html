@@ -1,0 +1,42 @@
+<h1 id="design-considerations">DESIGN CONSIDERATIONS</h1>
+<p>A static site system will be used to build and maintain the website to increase speed, reliability and security. </p>
+<h2 id="mobile-or-desktop-first">Mobile or Desktop First</h2>
+<p>Although the majority of traffic is now mobile. I still develop for a desktop first design with mobile first navigation.</p>
+<p>The reasons for this are:</p>
+<ol>
+<li>A lot of mobile devices (all Apple iPads, and all Iphones from version 5 upwards, most recent Samsung Phones and most Android non-budget tablets) support resolutions of 1280 or even 1920 width in landscape.</li>
+<li>With the exception of navigation mobiel devices in landscape are little different </li>
+<li>I only write with HTML5, CSS3 and Javascript (with transpiling and templating) and don&#39;t use non-mobile friendly technology</li>
+<li>Mobile first designs often look ridiculous on laptops or desktops and you end up redesigning for desktop anyway ... You can always have two designs in a single page hidden by CSS if absolutely necessary.</li>
+</ol>
+<h2 id="free-running">Free Running</h2>
+<p>Where possible I look to free hosting to remove running costs.</p>
+<h2 id="build-system-requirements">Build System Requirements</h2>
+<p>I would like to have the following supported:</p>
+<ul>
+<li>SASS</li>
+<li>Javascript</li>
+<li>Templated HTML <ul>
+<li>Jade?</li>
+<li>Liquid?</li>
+<li>Handlebars?</li>
+</ul>
+</li>
+<li>Node Based .... try to avoid Jekyll &amp; Ruby as I have had too many issues with keeping specific versions from breaking </li>
+<li>GitHub based hosting</li>
+<li>Travis CI to manage build from repository</li>
+<li>Ideally Jekyll compatible so that HTML/md files can be edited by user using (forestry.io)[<a href="http://forestry.io">http://forestry.io</a>]</li>
+</ul>
+<h2 id="build-system">Build System</h2>
+<p>I have chosen XXXXX as the static site compiler for the project</p>
+<h2 id="workflow">Workflow</h2>
+<h3 id="user-workflow">User Workflow</h3>
+<ol>
+<li>User logs into (forestry.io)[<a href="http://forestry.io">http://forestry.io</a>], selects page and commits edits. </li>
+<li>Forestry then pushes commits to GitHub <em>master</em> branch</li>
+<li>(Travis CI)[<a href="http://travis-ci.org">http://travis-ci.org</a>] notices the change and performs build committing to gh-pages branch in the _site directory which is automatically published by GitHub.</li>
+</ol>
+<h3 id="developer-workflow">Developer Workflow</h3>
+<p>The workflow for the developer is similar but uses Cloud9 as a development IDE. </p>
+<p>Developer uses <em>GitFlow</em> for managing changes in seperate branches. Finalised changes are pushed to <em>master</em> and the background build process is used for release.</p>
+<p>Commits go into the same build process as above.</p>
