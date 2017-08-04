@@ -15,8 +15,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "version": "auto-changelog --package; git add CHANGELOG.md",
-    "compile": "roots compile ",
-    "start": "echo run npm start from crossroads directory",
+    "start": "jekyll serve --host $IP --port $PORT --baseurl ''",
     "gitgraph": "git log --graph --decorate --pretty=oneline --abbrev-commit"
   },
   "repository": {
