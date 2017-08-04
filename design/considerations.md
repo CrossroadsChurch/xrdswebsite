@@ -1,5 +1,20 @@
 # DESIGN CONSIDERATIONS
 
+A static site system will be used to build and maintain the website to increase speed, reliability and security. 
+
+## Mobile or Desktop First
+Although the majority of traffic is now mobile. I still develop for a desktop first design with mobile first navigation.
+
+The reasons for this are:
+
+1. A lot of mobile devices (all Apple iPads, and all Iphones from version 5 upwards, most recent Samsung Phones and most Android non-budget tablets) support resolutions of 1280 or even 1920 width in landscape.
+2. With the exception of navigation mobiel devices in landscape are little different 
+3. I only write with HTML5, CSS3 and Javascript (with transpiling and templating) and don't use non-mobile friendly technology
+4. Mobile first designs often look ridiculous on laptops or desktops and you end up redesigning for desktop anyway ... You can always have two designs in a single page hidden by CSS if absolutely necessary.
+
+## Free Running
+Where possible I look to free hosting to remove running costs.
+
 ## Build System Requirements
 I would like to have the following supported:
 - SASS
