@@ -1,0 +1,23 @@
+{
+  "name": "crossroads-church",
+  "version": "0.0.1",
+  "description": "Website for Crossroads Church xrds.org.uk",
+  "main": "index.js",
+  "dependencies": {
+    "nvm": "^0.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrossroadsChurch/xrdswebsite.git"
+  },
+  "author": "Ian Stanley, ian@jesusdiedfor.me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CrossroadsChurch/xrdswebsite/issues"
+  },
+  "homepage": "https://github.com/CrossroadsChurch/xrdswebsite#readme"
+}
