@@ -1,0 +1,61 @@
+//
+// Menu and Navigation styling
+//
+
+$menu-icon-size: 3vw
+$menu-icon-position: 25px
+
+$sidemenu-width: 200px
+$sidemenu-color: rgba(255,255,255,1)
+$sidemenu-color-complement: rgba(255,255,255,0.6)
+$sidemenu-background: rgba(0,0,0,0.4)
+
+$sidemenu-lineheight: 45px
+
+.menuicon
+  // menu botton icon position
+  position: absolute
+  top: $menu-icon-position
+  left: $menu-icon-position
+  width: $menu-icon-size
+  height: $menu-icon-size
+  
+  color: rgba(255,255,255,0.7)
+  fill: currentColor
+  fill: rgba(255,255,0,0.7)
+
+
+img.menuiconimg
+
+  opacity: 0.4
+  &:hover 
+    opacity: 0.7
+    
+  //fill: rgba(255,255,255,0.7)
+    
+    
+    
+    
+.sidenav
+  width: $sidemenu-width
+  background-color: $sidemenu-background
+  
+  //position off-screen
+  position: relative
+  left: -$sidemenu-width
+  
+  h1
+    font-size: 18pt
+    text-align: center 
+  
+  $nav-padding: 30px
+  padding-top: $nav-padding
+  padding-bottom: $nav-padding
+  nav > ul
+    margin-top: 0
+    margin-bottom: 0
+    li
+      list-style-type: none
+      line-height: $sidemenu-lineheight
+
+  
