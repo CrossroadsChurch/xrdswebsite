@@ -5,12 +5,14 @@
 $menu-icon-size: 3vw
 $menu-icon-position: 25px
 
-$sidemenu-width: 200px
+$sidemenu-width: 100%
 $sidemenu-color: rgba(255,255,255,1)
 $sidemenu-color-complement: rgba(255,255,255,0.6)
 $sidemenu-background: rgba(0,0,0,0.4)
 
 $sidemenu-lineheight: 45px
+
+$menuitem-padding: 30px
 
 .menuicon
   // menu botton icon position
@@ -26,36 +28,51 @@ $sidemenu-lineheight: 45px
 
 
 img.menuiconimg
-
+  // z-index: 200
   opacity: 0.4
   &:hover 
     opacity: 0.7
     
-  //fill: rgba(255,255,255,0.7)
-    
-    
-    
-    
-.sidenav
+#sidenav
   width: $sidemenu-width
   background-color: $sidemenu-background
+  // z-index: 100
   
   //position off-screen
   position: relative
-  left: -$sidemenu-width
+  //left: -$sidemenu-width
+  padding-top: 20
   
   h1
     font-size: 18pt
-    text-align: center 
+    display: inline
+    padding-left: 100px
   
   $nav-padding: 30px
   padding-top: $nav-padding
   padding-bottom: $nav-padding
+
+  nav
+    display: inline
+
   nav > ul
     margin-top: 0
     margin-bottom: 0
+    display: inline
+    
     li
       list-style-type: none
       line-height: $sidemenu-lineheight
+      display: inline
+      padding-left: $menuitem-padding
 
+
+div#sidenav.navhidden
+  display: none
+  padding-top: 20
+
+//   left: 0
+//   display: 
   
+// #sidenav.navhidden
+//   left: -$sidemenu-width/2
