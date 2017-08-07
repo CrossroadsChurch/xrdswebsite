@@ -13,6 +13,7 @@ $sidemenu-background: rgba(0,0,0,0.4)
 $sidemenu-lineheight: 45px
 
 $menuitem-padding: 30px
+$menu-padding: 25px
 
 .menuicon
   // menu botton icon position
@@ -41,16 +42,13 @@ img.menuiconimg
   //position off-screen
   position: relative
   //left: -$sidemenu-width
-  padding-top: 20
+  padding-top: $menu-padding
+  padding-bottom: $menu-padding
   
   h1
     font-size: 18pt
     display: inline
     padding-left: 100px
-  
-  $nav-padding: 30px
-  padding-top: $nav-padding
-  padding-bottom: $nav-padding
 
   nav
     display: inline
@@ -69,7 +67,6 @@ img.menuiconimg
 
 div#sidenav.navhidden
   display: none
-  padding-top: 20
 
 //   left: 0
 //   display: 
