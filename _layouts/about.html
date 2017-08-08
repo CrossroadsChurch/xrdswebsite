@@ -1,0 +1,18 @@
+---
+layout: default
+splash: /img/about-splash.jpg 
+---
+
+{% include nav.html %}
+
+{{ site.baseurl }}
+{{page.splash}}
+
+<div class="about-splash">
+  <img src="{{ site.baseurl }}/{{page.splash}}" alt="about splash image" >
+  <img src="{{page.splash}}" alt="splash image of cross" >
+
+</div>
+
+{% include menu.html %}
+

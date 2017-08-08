@@ -1,12 +1,15 @@
 ---
 layout: default
+homesplash: "/img/homesplash.jpg"
 splash-image: http://placekitten.com/1920/800
 ---
 
 {% include nav.html %}
+  <img src="{{ page.homesplash }}" alt="splash image of cross" >
 
 <div class="main-splash">
-  <img src="{{page.splash-image}}" alt="splash image of cross" >
+  <img src="{{ page.splash-image }}" alt="splash image of cross" >
+
 </div>
 
 {% include menu.html %}
