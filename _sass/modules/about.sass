@@ -1,20 +1,56 @@
+$photosize: 300px
+
+.whoweare
+  margin: $sectiongap 0
+
 .about-splash
     
-    // FIX: fix this 
-    width: 100%
-    //min-height: 800px
+  // FIX: fix this 
+  width: 100%
+  //min-height: 800px
+  
+  img
+    margin: 0 auto
     
-    img
-        margin: 0 auto
-        
-        vertical-align: top
+    vertical-align: top
 
-        max-width: 1920px
-        width: 100%
-        //width: 100vw
-        height: 400px
-        //height: 800px
-    
-        // Color Filter overlays on the image    
-        -webkit-filter: grayscale(100%) // Safari 6.0 - 9.0 
-        filter: grayscale(100%)
+    max-width: 1920px
+    width: 100%
+    //width: 100vw
+    height: 400px
+    //height: 800px
+
+    // Color Filter overlays on the image    
+    -webkit-filter: grayscale(100%) // Safari 6.0 - 9.0 
+    filter: grayscale(100%)
+
+.bios
+
+  margin: $sectiongap 0
+  
+  .charles-bio, .bev-bio  
+  
+    margin-bottom: $sectiongap
+
+
+.bio-photo
+
+  min-width: 30% 
+
+  img.biopic
+
+    @include size($photosize)
+
+
+.biotext
+
+  max-width: 60%
+
+  p
+    margin-top: 0
+
+.charles-photo, .bev-text
+  float: left
+  
+.bev-photo, .charles-text   
+  float: right
