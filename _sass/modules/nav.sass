@@ -37,13 +37,25 @@ img.menuiconimg
 #sidenav
   width: $sidemenu-width
   background-color: $sidemenu-background
+  
+  // background-image: url("/img/navbackground.jpg")
   // z-index: 100
   
   //position off-screen
   position: relative
   //left: -$sidemenu-width
-  padding-top: $menu-padding
-  padding-bottom: $menu-padding
+  // padding-top: $menu-padding
+  // padding-bottom: $menu-padding
+  
+  .navbackground
+    width: 100%
+    filter: grayscale(100%)
+
+    
+  .menuarea
+    position: relative
+    top: -125px
+    background-color: rgba(255,255,255,0.6)
   
   h1
     font-size: 18pt
