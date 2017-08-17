@@ -2,24 +2,26 @@
 // Menu and Navigation styling
 //
 
-$menu-icon-size: 3vw
-$menu-icon-position: 25px
+//$menu-icon-size: 3vw
+$menu-icon-size: 3em
+$menu-icon-position: 3em
 
 $sidemenu-width: 100%
 $sidemenu-color: rgba(255,255,255,1)
 $sidemenu-color-complement: rgba(255,255,255,0.6)
 $sidemenu-background: rgba(0,0,0,0.4)
 
-$sidemenu-lineheight: 45px
+$sidemenu-lineheight: 42px
 
 $menuitem-padding: 30px
 $menu-padding: 25px
+$menucolor: black
 
 .menuicon
   // menu botton icon position
   position: absolute
   top: $menu-icon-position
-  left: $menu-icon-position
+  left: $menu-icon-position 
   width: $menu-icon-size
   height: $menu-icon-size
   
@@ -36,6 +38,10 @@ img.menuiconimg
     
 #sidenav
   width: $sidemenu-width
+  height: 9.14vw
+  min-height: 106px
+  
+  // ISSUE At 1200px
   background-color: $sidemenu-background
   
   // background-image: url("/img/navbackground.jpg")
@@ -50,20 +56,31 @@ img.menuiconimg
   .navbackground
     width: 100%
     filter: grayscale(100%)
-
+    -webkit-filter: grayscale(100%) // Safari 6.0 - 9.0 
     
   .menuarea
-    position: relative
-    top: -125px
+    position: absolute
+    top: 0
+    height: 3em
+    width: 100%
     background-color: rgba(255,255,255,0.6)
+    padding-top: 1em
+    padding-bottom: 1em
+    margin-top: 2em
+    padding-left: 1em
+    padding-right: 1em
+
   
   h1
-    font-size: 18pt
+    font-size: 1.8em
     display: inline
-    padding-left: 100px
+    padding-left: 120px
+    line-height: 1.8em
 
   nav
     display: inline
+    line-height: 1.8em
+
 
   nav > ul
     margin-top: 0
@@ -75,6 +92,9 @@ img.menuiconimg
       line-height: $sidemenu-lineheight
       display: inline
       padding-left: $menuitem-padding
+      font-size: 1.5em
+      a
+        color: $menucolor
 
 
 div#sidenav.navhidden

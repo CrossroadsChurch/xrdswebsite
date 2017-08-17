@@ -5,11 +5,13 @@ $footertextcolor: rgba(255,255,255,0.3)
   width: 100%
     //background-color: lightgray
   background-color: none
+  position: relative
+  top: -4em
   
   img.footerimg
     width: 100%
     position: relative
-    margin-top: 4em
+    // margin-top: 4em // can't have this here as it messes up home page ... add to individual page content instead
     
   .contactblock
     width: 200px
@@ -26,8 +28,13 @@ $footertextcolor: rgba(255,255,255,0.3)
     color: $footertextcolor
     vertical-align: top
     
- 
-  
+  img.fblogo
+    filter: grayscale(100%)
+    -webkit-filter: grayscale(100%) // Safari 6.0 - 9.0 
+    width: 4em
+    opacity: 80%
+    margin-top: 1em
+    
   .footercontact
   
     position: relative
