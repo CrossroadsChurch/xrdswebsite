@@ -13,8 +13,25 @@
     width: 100%
     //width: 100vw
     height: 400px
+    overflow: cover
     //height: 800px
 
     // Color Filter overlays on the image    
     -webkit-filter: grayscale(100%) // Safari 6.0 - 9.0 
     filter: grayscale(100%)
+    
+.menuicon
+  
+  color: rgba(255,255,255,0.9)
+  fill: currentColor
+  fill: rgba(255,255,255,0.3)    
+  // fill: rgba(0,0,0,0.9)    
+  
+
+img.menuiconimg
+  // z-index: 200
+  opacity: 0.6
+  filter: invert(100%)
+
+  &:hover 
+    opacity: 0.7
