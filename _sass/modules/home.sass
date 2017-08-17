@@ -2,12 +2,20 @@
 
 @import 'home-splash.sass'
 
+@mixin findout1920fix 
+  @media (min-width: 1920px) 
+    @content
+
 .findout
 
   // adjust to overlap previous image div
   position: relative
   margin-left: 80vw
   top: -120px
+  
+  @include findout1920fix
+    margin-left: 1500px
+ 
     
   a
     text-decoration: none
@@ -20,7 +28,10 @@
     // margin-right: 10vw
     // top: -120px
     //top: -60px
-    font-size: 1.8vw
+    font-size: 2.4vw
+    
+    @include findout1920fix
+      font-size: 36pt
     
     &:hover 
       color: rgba(0,0,0,0.7)
