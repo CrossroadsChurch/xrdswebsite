@@ -3,7 +3,15 @@
   @media (min-width: 1920px) 
     @content
     
+@mixin under1920fix 
+  @media (max-width: 1920px) 
+    @content
+    
     
 @mixin under1200fix 
-  @media (max-width: 120px) 
+  @media (max-width: 1200px) 
+    @content
+    
+@mixin under600fix 
+  @media (max-width: 600px) 
     @content
