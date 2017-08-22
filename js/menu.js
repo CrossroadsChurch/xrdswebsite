@@ -38,6 +38,9 @@ $(window).on("load resize",function(e) {
     
     console.log("menuToggle.on click")
     
+    // document.getElementByClass(".menuiconimg").style.filter="invert(100%)";
+
+    
     $("#sidenav").slideToggle(function() {
       console.log("slideToggle")
       // $("#sidenav").addClass("navhidden")
