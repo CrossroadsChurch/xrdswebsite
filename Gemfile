@@ -28,3 +28,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bourbon'
 gem 'neat'
 
+gem 'github-pages'
+
+

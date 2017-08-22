@@ -4,7 +4,7 @@
 
 //$menu-icon-size: 3vw
 $menu-icon-size: 3em
-$menu-icon-position: 3em
+$menu-icon-position: 48px
 
 $sidemenu-width: 100%
 $sidemenu-color: rgba(255,255,255,1)
@@ -17,6 +17,18 @@ $menuitem-padding: 30px
 $menu-padding: 25px
 $menucolor: black
 
+
+@mixin over1920fix 
+  @media (min-width: 1920px) 
+    @content
+    
+    
+@mixin under1200fix 
+  @media (max-width: 120px) 
+    @content
+    
+    
+
 .menuicon
   // menu botton icon position
   position: absolute
@@ -24,6 +36,14 @@ $menucolor: black
   left: $menu-icon-position 
   width: $menu-icon-size
   height: $menu-icon-size
+  
+  // larger than 1920px screens
+  @include over1920fix
+    left: calc(23vw + $menu-icon-position)
+  
+  // smaller than 1200px screens
+  
+  
   
   color: rgba(255,255,255,0.7)
   fill: currentColor
