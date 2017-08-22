@@ -58,6 +58,11 @@ img.menuiconimg
   // ISSUE At 1200px
   //background-color: $sidemenu-background
   
+  @include mobilemenufix
+    max-height: 800px
+    height:  400px
+  
+  
   background-image: url("/img/navbackground.jpg")
   // z-index: 100
   
@@ -76,6 +81,8 @@ img.menuiconimg
     position: absolute
     top: 0
     height: 3em
+    @include mobilemenufix
+      height: inherit
     width: 100%
     background-color: rgba(255,255,255,0.6)
     padding-top: 1em
@@ -101,10 +108,17 @@ img.menuiconimg
     margin-bottom: 0
     display: inline
     
+    @include mobilemenufix
+      display: block
+    
     li
       list-style-type: none
       line-height: $sidemenu-lineheight
       display: inline
+      
+      @include mobilemenufix
+        display: block
+        
       padding-left: $menuitem-padding
       font-size: 1.5em
       a
@@ -123,6 +137,7 @@ div#sidenav.navhidden
 //   left: -$sidemenu-width/2
 
 li.navitem 
+
 
   a:link
     color: yellow
