@@ -12,6 +12,15 @@
   @media (max-width: 1200px) 
     @content
     
+@mixin under900fix 
+  @media (max-width: 900px) 
+    @content
+    
+@mixin under460fbfix 
+  @media (max-width: 640px) 
+    @content
+    
 @mixin under600fix 
   @media (max-width: 600px) 
     @content
+

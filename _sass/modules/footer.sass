@@ -20,13 +20,20 @@ $footertextcolor: rgba(255,255,255,0.3)
     width: 200px
     display: inline-block
     vertical-align: top
+    @include under460fbfix
+      width: 30%
     
   ul.contactus 
+  
+    @include under460fbfix
+      padding-left: 10px
     
     li 
       color: $footertextcolor
       list-style: none
       line-height: 1.3em
+      @include under460fbfix
+        font-size: 2.8vw
       
       a
         color: $footertextcolor   
@@ -42,10 +49,23 @@ $footertextcolor: rgba(255,255,255,0.3)
     width: 3.5em
     opacity: 60%
     margin-top: 1em
+    @include under460fbfix
+      width: 25%
     
   .footercontact
   
     position: relative
     top: -120px
     left: 80px
+    @include under900fix
+      left: 30px
+      
+    @include under460fbfix
+      top: -18vw
+
     
+  #contactustext
+    
+    @include under900fix
+      display: none
+      
