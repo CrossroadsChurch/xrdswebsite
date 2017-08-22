@@ -1,10 +1,11 @@
 .main-splash
-    
+  
+  position: relative
   // FIX: fix this 
   width: 100%
   //min-height: 800px
   
-  img
+  img.homesplashimg
     margin: 0 auto
     
     vertical-align: top
@@ -19,6 +20,10 @@
     -webkit-filter: grayscale(50%) // Safari 6.0 - 9.0 
     filter: grayscale(50%)
 
+
+
+
+// main splash imaage text
 .crossroads
 
   a h1.crossroadstext
@@ -27,7 +32,13 @@
     top: 30vh
     text-decoration: none
     
-    font-size: 25vh
+    font-size: 12vw // proportionate text
+
+    @include over1920fix
+      font-size: 230px // proportionate text
+
+    // media query here font-size: 230px
+    
     margin-left: 5vw
     
     color: white
