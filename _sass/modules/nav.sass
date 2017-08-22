@@ -25,6 +25,7 @@ $menucolor: black
   left: $menu-icon-position 
   width: $menu-icon-size
   height: $menu-icon-size
+  z-index: 99
   
   // larger than 1920px screens
   @include over1920fix
@@ -55,9 +56,9 @@ img.menuiconimg
 
   
   // ISSUE At 1200px
-  background-color: $sidemenu-background
+  //background-color: $sidemenu-background
   
-  // background-image: url("/img/navbackground.jpg")
+  background-image: url("/img/navbackground.jpg")
   // z-index: 100
   
   //position off-screen
@@ -113,7 +114,7 @@ img.menuiconimg
 div#sidenav.navhidden
   display: none
   //transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94)
-  // transition: margin 300ms linear
+  transition: margin 100ms linear
 
 //   left: 0
 //   display: 

@@ -7,15 +7,9 @@
 // components/nav.js
 //
 
-
 $(window).on("load resize",function(e) {
   
-  console.log("window.on load #sidenav")
-  
   //var menuToggle = document.getElementById("#sidenav");
-
-
-  console.log("loop #sidenav")
 
   $("#sidenav").addClass("navhidden")
   
@@ -23,7 +17,7 @@ $(window).on("load resize",function(e) {
   
  // $("#sidenav").slideToggle();
   
-  
+  console.log("what is going on here")
 
 
   // var menuToggle = $("#menuiconimg").unbind();
