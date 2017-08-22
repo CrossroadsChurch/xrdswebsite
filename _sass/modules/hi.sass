@@ -2,15 +2,19 @@
     
   // FIX: fix this 
   width: 100%
+  position: relative
   //min-height: 800px
   
-  img
+  img.hi-img
     margin: 0 auto
     
     vertical-align: top
 
     max-width: 1920px
     width: 100%
+    // @include under900fix
+      // height: 450px
+      // width: auto
     //width: 100vw
     height: 400px
     overflow: cover
@@ -26,6 +30,7 @@
   fill: currentColor
   fill: rgba(255,255,255,0.3)    
   // fill: rgba(0,0,0,0.9)    
+  z-index: 99
   
 
 img.menuiconimg
@@ -37,15 +42,28 @@ img.menuiconimg
     opacity: 0.7
     
 .welcome
+  width: 100%
+  
 
   h1.welcometext
   
     position: absolute
+    width: 100%
+
+    font-size: 8vw
+
     top: 15vh
+    @include under1200fix
+      top: 25vh
+      font-size: 6vh      
+
     text-decoration: none
+    text-align: center
     
-    font-size: 6vw
-    margin-left: 5vw
+    @include over1920fix
+      font-size: 150px
+    
+    // margin-left: 5vw
     
     color: white
     opacity: 0.6
