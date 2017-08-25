@@ -2,11 +2,6 @@
 // Handling menu events
 // 
 
-
-//
-// components/nav.js
-//
-
 $(window).on("load resize",function(e) {
   
   $("#sidenav").addClass("navhidden")
