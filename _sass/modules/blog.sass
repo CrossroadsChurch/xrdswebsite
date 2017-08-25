@@ -1,49 +1,5 @@
 .blog-splash
-    
-  // FIX: fix this 
-  width: 100%
-  position: relative
-  //min-height: 800px
-  
-  img
-    margin: 0 auto
-    
-    vertical-align: top
-
-    max-width: 1920px
-    width: 100%
-    //width: 100vw
-    height: 400px
-    //height: 800px
-
-    // Color Filter overlays on the image    
-    // -webkit-filter: grayscale(100%) // Safari 6.0 - 9.0 
-    // filter: grayscale(100%)
-
+  @include splashimgmixin
 
   h1.blogh1
-    position: absolute
-    width: 100%
-    text-align: center
-
-    font-size: 8vw
-
-    top: 15vh
-    @include under1200fix
-      top: 25vh
-      font-size: 6vh    
-      
-    @include mobilelandscape
-      top: 45vh
-      font-size: $mobiletitlesize
-
-    text-decoration: none
-    text-align: center
-    
-    @include over1920fix
-      font-size: 150px
-    
-    // margin-left: 5vw
-    
-    color: white
-    opacity: 0.6
+    @include splashh1mixin

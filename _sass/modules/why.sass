@@ -1,43 +1,8 @@
 .why-splash
-    
-  width: 100%
-  position: relative
-  
-  img
-    margin: 0 auto
-    
-    vertical-align: top
-
-    max-width: 1920px
-    width: 100%
-    //width: 100vw
-    height: 400px
-    //height: 800px
-
-    // Color Filter overlays on the image    
-    // -webkit-filter: grayscale(50%) // Safari 6.0 - 9.0 
-    // filter: grayscale(50%)
+  @include splashimgmixin
 
 .whydowe
 
   h1.whytext
-  
-    position: absolute
-    top: 30vh
-    text-decoration: none
-    width: 100%
-    text-align: center
-    
-    font-size: 6vw
-    margin-left: 5vw
-    
-    @include under1200fix
-      // top: 25vh
-      font-size: 6vh    
-      
-    @include mobilelandscape
-      top: 45vh
-      font-size: $mobiletitlesize
-      
-    color: white
+    @include splashh1mixin
     opacity: 0.8

@@ -4,24 +4,8 @@ $photosize: 360px
   margin: $sectiongap 0
 
 .about-splash
-    
-  width: 100%
-  position: relative
+  @include splashimgmixin
 
-  img
-    margin: 0 auto
-    
-    vertical-align: top
-
-    max-width: 1920px
-    width: 100%
-    //width: 100vw
-    height: 400px
-    //height: 800px
-
-    // Color Filter overlays on the image    
-    -webkit-filter: grayscale(25%) // Safari 6.0 - 9.0 
-    filter: grayscale(25%)
 
 .bios
 
@@ -80,23 +64,4 @@ $photosize: 360px
 .about
 
   h1.abouttext
-  
-    position: absolute
-    top: 15vh
-    text-decoration: none
-    width: 100%
-    text-align: center
-    
-    font-size: 6vw
-    margin-left: 5vw
-    
-    @include under1200fix
-      top: 25vh
-      font-size: 6vh    
-      
-    @include mobilelandscape
-      top: 45vh
-      font-size: $mobiletitlesize
-    
-    color: white
-    opacity: 0.6
+    @include splashh1mixin

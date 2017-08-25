@@ -1,29 +1,6 @@
 .hi-splash
-    
-  // FIX: fix this 
-  width: 100%
-  position: relative
-  //min-height: 800px
-  
-  img.hi-img
-    margin: 0 auto
-    
-    vertical-align: top
+  @include splashimgmixin
 
-    max-width: 1920px
-    width: 100%
-    // @include under900fix
-      // height: 450px
-      // width: auto
-    //width: 100vw
-    height: 400px
-    overflow: cover
-    //height: 800px
-
-    // Color Filter overlays on the image    
-    // -webkit-filter: grayscale(100%) // Safari 6.0 - 9.0 
-    // filter: grayscale(100%)
-    
 .menuicon
   
   color: rgba(255,255,255,0.9)
@@ -44,34 +21,9 @@ img.menuiconimg
 .welcome
   width: 100%
   
-
   h1.welcometext
-  
-    position: absolute
-    width: 100%
+    @include splashh1mixin  
 
-    font-size: 8vw
-
-    top: 15vh
-    @include under1200fix
-      top: 25vh
-      font-size: 6vh    
-      
-    @include mobilelandscape
-      top: 45vh
-      font-size: 12vh
-
-    text-decoration: none
-    text-align: center
-    
-    @include over1920fix
-      font-size: 150px
-    
-    // margin-left: 5vw
-    
-    color: white
-    opacity: 0.6
-    
 img.bioimages
   width: 600px
   @include under900fix
