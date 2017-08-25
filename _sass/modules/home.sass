@@ -8,51 +8,35 @@
     @content
 
 .findout
-
-  // adjust to overlap previous image div
   position: relative
   margin-left: 80vw
   top: -120px
   
   @include over1920fix
     margin-left: 1500px
-    
   @include under1920fix
-  
     margin-left: auto
     margin-right: auto
     width: 100%
     top: -150px
-    
   @include under1200fix
     top: -30vh
     
-
   a
     text-decoration: none
 
   h1
     color: white
-
     opacity: 0.6
     text-align: left
-    // position: relative
-    // margin-right: 10vw
-    // top: -120px
-    //top: -60px
     font-size: 6vh 
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
-
-    
     @include over1920fix
       font-size: 36pt
-      
     @include under1920fix
       text-align: center
-      
     @include under600fix
       font-size: 8vw 
-
     &:hover 
       color: rgba(0,0,0,0.7)
 

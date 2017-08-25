@@ -7,16 +7,15 @@
 @import "sassmixins.sass";
 
 @import "autoprefix.scss";
+
 // Over-ride Bourbon variables and setup system-wide variables
 @import "custom-variables.sass";
-
 
 // Bourbon mixin library, Neat framework and Bitters base styling
 @import "plugins/plugins-dir.scss";
 
-
 // Custom Typography
-// @import "typography";
+@import "typography";
 
 // Add in all modules
 @import "modules/modules-dir.scss";

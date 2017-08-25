@@ -1,50 +1,26 @@
 .main-splash
-  
   position: relative
-  // FIX: fix this 
   width: 100%
-  //min-height: 800px
   overflow: hidden // fix overflow from cross image
-  
+
   img.homesplashimg
     margin: 0 auto
-    
     vertical-align: top
-
     max-width: 1920px
     width: 100%
-    //width: 100vw
     height: 100vh
-    //height: 800px
 
-    // Color Filter overlays on the image    
-    -webkit-filter: grayscale(50%) // Safari 6.0 - 9.0 
-    filter: grayscale(50%)
-
-
-
-
-// main splash imaage text
 .crossroads
 
   a h1.crossroadstext
   
     position: absolute
     top: 30vh
-    // @include mobilemenufix
-    //   top: 35vh
-      
     text-decoration: none
-    
-    font-size: 12vw // proportionate text
-
+    font-size: 12vw 
     @include over1920fix
-      font-size: 230px // proportionate text
-
-    // media query here font-size: 230px
-    
+      font-size: 230px 
     margin-left: 5vw
-    
     color: white
     opacity: 0.6
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
