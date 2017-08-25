@@ -28,3 +28,6 @@
   @media (max-width: 600px) 
     @content
 
+@mixin mobilelandscape // 720p 1280x720 fixes
+  @media  (max-device-width: 1200px) and (orientation: landscape)
+    @content 
