@@ -5,10 +5,9 @@ $photosize: 360px
 
 .about-splash
     
-  // FIX: fix this 
   width: 100%
-  //min-height: 800px
-  
+  position: relative
+
   img
     margin: 0 auto
     
@@ -85,9 +84,19 @@ $photosize: 360px
     position: absolute
     top: 15vh
     text-decoration: none
+    width: 100%
+    text-align: center
     
     font-size: 6vw
     margin-left: 5vw
+    
+    @include under1200fix
+      top: 25vh
+      font-size: 6vh    
+      
+    @include mobilelandscape
+      top: 45vh
+      font-size: $mobiletitlesize
     
     color: white
     opacity: 0.6
