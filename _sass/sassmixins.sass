@@ -1,0 +1,18 @@
+
+@mixin splashh1mixin 
+  position: absolute
+  top: 15vh
+  text-decoration: none
+  width: 100%
+  text-align: center
+  color: white
+  opacity: 0.6    
+  font-size: 6vw
+  margin-left: 5vw
+  @include under1200fix
+    top: 25vh
+    font-size: 6vh    
+    
+  @include mobilelandscape
+    top: 45vh
+    font-size: $mobiletitlesize
