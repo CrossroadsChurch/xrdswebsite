@@ -2,10 +2,21 @@
 
   margin-left: auto
   margin-right:  auto
+  display: block
 
   h2
     color: red
-    font-size: 4vw
+    font-size: 3.6vw
+    margin-top: 3em
+    padding-left: 1em
     
+    @include under1200fix
+      font-size: 4vw
+
+
   p
     font-size: 2.4vw
+    padding-left: 2em
+  
+    @include under1200fix
+      font-size: 3vw
